@@ -1,0 +1,62 @@
+/* ============================= 5 section - rooms ============================== */
+.rooms{
+	background-color: #f1f1f1;
+}
+.rooms .nav-pills{
+	margin: 30px 0;
+}
+.gallery-item{
+	margin-bottom: 20px;
+}
+.gallery a img{
+	transition: all .5s;
+}
+.gallery a:hover img{
+	box-shadow: 0 14px 30px -15px rgba(0,0,0,.75);
+}
+
+.room_price{
+    margin: 20px 0;
+    display: block;
+}
+
+.room_price .room_description p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.room_price p.price_title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.room_price .price_wrap {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.room_price .price_wrap p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+.room_price .price_wrap p span{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.nav-item a{
+    color: #69328e;
+}
+.nav-item a:hover{
+    color: #000;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #69328e;
+}
+

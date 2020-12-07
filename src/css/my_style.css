@@ -1,0 +1,434 @@
+@charset "UTF-8";
+
+/**
+* Сброс стилей
+**/
+/* 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+input {outline: 0;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+
+body{
+	position: relative;
+	
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= ============================== */
+/* Large Devices, Wide Screens */
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+
+
+
+    .main-header-text{
+        background-color: rgba(0,0,0,.3);
+    }
+
+    .copyright{
+        padding: 25px 0;
+    }
+    .section-reviews h3,
+    .section-reviews h4{
+        font-size: 25px;
+    }
+    .section-reviews .blockquote{
+        font-size: 17px;
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+    .section-reviews .blockquote::before{
+        font-size: 100px;
+        top: -40px;
+    }
+
+
+
+    /* 1 sec. - set*/
+    .devider3 p::after,
+    .devider3::before,
+    .devider3::after{
+        top: 45%;
+    }
+
+
+    /* 2 sec. - About*/
+
+    .see_star{
+        width: 200px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width : 991px) {
+    .navbar-nav{
+        background: linear-gradient(45deg, #ed1b33 0%,#442e82 100%);
+        position: relative;
+        z-index: 1;
+        padding: 0 15px;
+    }
+    .social .social-item{
+        border-right: none;
+    }
+
+    .form-inputs{
+
+        padding: 10px 30px;
+    }
+
+    footer .footer-item{
+        margin-bottom: 30px;
+
+    }
+    footer .footer-weather{
+        margin-top: 30px;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    h1{
+        text-align: center;
+    }
+
+    .video-header{
+        display: none;
+    }
+
+    .scrollToTop{
+
+        bottom: 50px;
+        right: 10px;
+
+    }
+
+
+    .main-header-text{
+        left: 0;
+        margin: 0 20px;
+        max-width: 100%;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-progress .progress-item{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+
+
+    /* 1 sec. - set*/
+    .devider3 p::after,
+    .devider3::before,
+    .devider3::after{
+        top: 45%;
+    }
+
+
+    .form_block {
+        justify-content: center;
+        margin-top: 0;
+    }
+    .attractions-block a p.attractions-item-text{
+        font-size: 30px;
+    }
+
+
+    .form-address {
+        flex-basis: 95%;
+
+        padding: 15px 80px;
+
+    }
+
+    .form-address-info{
+        margin: 30px 0;
+    }
+
+    .form-address {
+        flex-basis: 90%;
+        margin-bottom: 30px;
+    }
+    .form-inputs{
+        flex-basis: 90%;
+        padding: 10px 10px;
+    }
+
+    .keep_form label{
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+
+
+    }
+
+
+
+
+    .main-header-buttons .btn,
+    .form .btn,
+    .section-letsDo .btn,
+    footer .btn{
+        margin-right: 0;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width : 600px) {
+
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 18px;
+
+    }
+
+
+    #carouselExampleControls{
+        height: 80px;
+        margin-bottom: 30px;
+    }
+    .see_star{
+        top: -50px;
+        width: 150px;
+    }
+
+
+
+    .main-header-text{
+        top: 90px;
+    }
+    .main-header-buttons .btn{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .main-header-buttons .btn:last-child{
+        margin-top: 0;
+    }
+    .btn-shadow{
+        box-shadow: 0 5px 0 #ff5990;
+        padding: 10px 15px;
+    }
+
+
+
+    .sec-top{
+        padding-top: 30px;
+    }
+    .sec-bot{
+        padding-bottom: 30px;
+    }
+
+    .indicators .indicator-item{
+        margin-top: 20px;
+    }
+    .indicators .indicator-item-img{
+        margin-bottom: 10px;
+    }
+    .indicators .indicator-item p.indicator-title{
+        margin-bottom: 5px;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width : 576px) {
+    /*.section-reviews .carousel-caption{*/
+        /*position: static;*/
+        /*width: 70%;*/
+        /*margin: auto;*/
+    /*}*/
+
+
+
+    .section-content img{
+        display: block;
+        max-width: 100%;
+        margin: 0 2%;
+    }
+
+
+    .room_price .price_wrap p{
+
+        font-size: 16px;
+
+    }
+    .room_price .price_wrap p span{
+        font-size: 20px;
+
+
+    }
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    .sec-top{
+        padding-top: 10px;
+    }
+    .sec-bot{
+        padding-bottom: 10px;
+    }
+
+
+    .section-tabs .nav-pills .nav-link{
+        padding: 8px 16px;
+    }
+    .section-tabs .nav-pills .nav-item{
+        width: 100%;
+    }
+    .thumb{
+        float: none;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width : 380px) {
+
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 16px;
+    }
+
+
+    .main-header .navbar-brand{
+        font-size: 30px;
+    }
+
+
+
+    /* 1 sec. - set*/
+    .devider3 p::after,
+    .devider3::before,
+    .devider3::after{
+        display: none;
+    }
+
+
+
+}

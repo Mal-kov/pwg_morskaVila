@@ -1,0 +1,74 @@
+
+/* =============================4 section - attractions============================== */
+
+section #attractions{
+    padding-bottom: 0;
+}
+.attractions-block{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.attractions-block a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.attractions-block a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 9;
+
+}
+.attractions-block a img.attractions-img{
+    max-height: 800px;
+}
+
+.attractions-block a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.5);
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity;
+}
+.attractions-block a:hover::after,
+.attractions-block a:hover p{
+    opacity: 1;
+}
+
+.attractions-block p{
+    color: #fff;
+    /*display: block;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity;
+}
+
+.attractions-block a{
+    z-index: 15;
+}
+
+.attractions-block a p.attractions-item-text{
+    font-family: 'Gabriela', serif;
+    color: #fff;
+    font-size: 50px;
+    line-height: 60px;
+}
+

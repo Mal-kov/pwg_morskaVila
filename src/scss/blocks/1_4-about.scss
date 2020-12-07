@@ -1,0 +1,26 @@
+
+/* =============================2 section - about============================== */
+
+
+.about{
+
+    .section-content img{
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 8px 10px -8px rgba(0,0,0,.75);
+    
+    }
+    .section-content .about_text{
+        padding: 20px 0;
+    }
+    
+    .section-content .about_text p.kursiv{
+        padding: 20px 10px;
+    }
+    .section-content .about_img img{
+        display: block;
+        width: 100%;
+    }
+
+
+}

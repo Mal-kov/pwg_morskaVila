@@ -1,0 +1,111 @@
+
+/* ============================= video ============================== */
+
+
+
+
+.video-header{
+
+    /*background: url("../video/hero_1.mp4") center center;*/
+    /*background-size: cover;*/
+    position: absolute;
+    /*display: block;*/
+    top: 0;
+    left: 40%;
+    height: 110vh;
+    width: 60%;
+    /*clip-path: polygon(0 100%, 80% 0, 80% 100%);*/
+    clip-path: circle(53% at 59% 63%);
+    z-index: 2;
+
+
+}
+
+.homepage-hero-module {
+
+
+
+
+    border: none;
+    /*border-right: none;*/
+    /*border-left: none;*/
+    position: relative;
+    /*background-position-x: 50%;*/
+    /*background-size: 100% auto;*/
+
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    position: relative;
+    bottom: 20%;
+    left: 0%;
+    height: 123%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .poster img {
+    width: 800px;
+    bottom: 0;
+    position: absolute;
+
+}
+
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+
+@media only screen and (max-width : 1367px) {
+
+    .video-header{
+        clip-path: circle(45% at 65% 66%);
+    }
+
+}
+
+@media only screen and (max-width : 1281px) {
+
+    .video-header{
+
+        clip-path: circle(45% at 64% 66%);
+
+    }
+
+
+}
+
+@media only screen and (max-width : 1025px) {
+
+    .video-header{
+
+        clip-path: circle(34% at 68% 84%);
+
+    }
+
+
+}

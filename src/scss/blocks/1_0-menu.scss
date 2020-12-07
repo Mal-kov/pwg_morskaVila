@@ -1,0 +1,97 @@
+
+
+.navbar-expand-lg .navbar-nav .menu-item {
+    padding: 0.5rem 1rem;
+}
+.menu-item:hover,
+.menu-item:focus{
+    text-decoration: none;
+}
+.menu-item a{
+    text-decoration: none;
+}
+
+#fh5co-offcanvas {
+    position: absolute;
+    z-index: 1901;
+    width: 270px;
+    background: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 75px 40px 40px 40px;
+    overflow-y: auto;
+    display: none;
+    -moz-transform: translateX(270px);
+    -webkit-transform: translateX(270px);
+    -ms-transform: translateX(270px);
+    -o-transform: translateX(270px);
+    transform: translateX(270px);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 768px) {
+    #fh5co-offcanvas {
+        display: block;
+    }
+}
+.offcanvas #fh5co-offcanvas {
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+}
+#fh5co-offcanvas a {
+    color: rgba(255, 255, 255, 0.5);
+}
+#fh5co-offcanvas a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+#fh5co-offcanvas ul {
+    padding: 0;
+    margin: 0;
+}
+#fh5co-offcanvas ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#fh5co-offcanvas ul li > ul {
+    padding-left: 20px;
+    display: none;
+}
+#fh5co-offcanvas ul li.offcanvas-has-dropdown > a {
+    display: block;
+    position: relative;
+}
+#fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
+    position: absolute;
+    right: 0px;
+    // font-family: 'icomoon';
+    // speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e921";
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+#fh5co-offcanvas ul li.offcanvas-has-dropdown.active a:after {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
