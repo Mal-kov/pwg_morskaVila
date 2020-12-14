@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-
-    <!--Шрифт логотипа-->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet"> -->
-
-    <!--Шрифт заголовок секции-->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Gabriela&display=swap&subset=cyrillic-ext" rel="stylesheet"> -->
-
-    <!--Шрифт описание секции-->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic" rel="stylesheet"> -->
-
-    <!--Шрифт описание секции-->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap&subset=cyrillic-ext" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/mos-preloader.css">
-
-	<link rel="stylesheet" href="css/baguetteBox.css">
-	<link rel="stylesheet" href="css/all.css">
-	<link rel="stylesheet" href="css/my_style.css"> -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hotel</title>
 </head>
 <body>
 
-<!--<div class="preloader d-flex justify-content-center align-items-center">-->
-    <!--<div class="spinner-border text-danger" style="width: 10rem; height: 10rem;" role="status">-->
-        <!--<span class="sr-only">Loading...</span>-->
-    <!--</div>-->
-<!--</div>-->
+<!-- <div class="preloader d-flex justify-content-center align-items-center">
+    <div class="spinner-border text-danger" style="width: 10rem; height: 10rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div> -->
 
 <button class="scrollToTop"><i class="fas fa-angle-up"></i></button>
 
+<div id="cookieBanner" class="cookie">
+    <div class="cookie_block">
+        <div class="cookie_text">
+            <p>We use cookies to enhance your experience 
+            By continiing to visit this sate you agree with our
+            <button type="button" class="btn btn-cookies " data-toggle="modal" data-target="#vilaCookies">
+                Cookies Policy</button>
+            </p> 
+        </div>
+        <div class="cookie_button">
+            <button id='#acceptCookies' class="btn rounded-pill">Okay</button>
+        </div>
+    </div>
+    
+</div>
+<!-- Модальное окно политики использования Cookies -->
+<div class="modal fade" id="vilaCookies" tabindex="-1" aria-labelledby="cookiesLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="cookiesLabel">Our cookies policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>We use cookies and similar methods to recognize visitors and remember their preferences. We also use them to measure ad campaign effectiveness, target ads and analyze site traffic.
 
-<header class="main-header">
+                To learn more about these methods, including how to disable them, view our Cookie Policy. Starting on July 20, 2020 we will show you ads we think are relevant to your interests, based on the kinds of content you access in our Services. You can object. For more info, see our privacy policy.
+                
+                By tapping 'accept,' you consent to the use of these methods by us and third parties. You can always change your tracker preferences by visiting our Cookie Policy."</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">I agree</button>
+        </div>
+    </div>
+</div>
+
+
+
+<header class="main-header" style="background-image: url(images/cont/1sec_bg.jpg)">
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
             <p class="logo">MORSKA VILA</p>
@@ -55,20 +75,37 @@
     </nav>
 
     <div class="main-header-text">
-        <h3>Family hotel "Morska Vila"</h3>
-        <h4>We have tried to organize the rest for you with maximum comfort.</h4>
-        <!--<p>Мы постарались организовать отдых для вас с максимальным комфортом.</p>-->
-        <div class="main-header-buttons">
-            <button type="button" class="btn btn-violet rounded-pill contactBtn">Rooms</button>
+        <h1>Family hotel "Morska Vila"</h1>
+        <div id="carousel_headerText" class="carousel vertical" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h2>We have tried to organize the rest for you with maximum comfort.</h2>
+                </div>
+                <div class="carousel-item">
+                    <h2>A great vacation awaits you</h2>
+                </div>
+                <div class="carousel-item">
+                    <h2>We have already taken care of everything</h2>
+                    
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- /.main-header-text -->
-</header>
+        <div class="main-header-buttons">
+            <button type="button" class="btn btn-violet rounded-pill contactBtn">Book Room</button>
+        </div>
+    </div> 
+</header> 
 
+<!-- 1 Секция - Видео вставка -->
+<!-- <section class="video-header">
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <video autoplay="" loop="" muted="" playsinline="" src="https://morska-vila.ru/wp-content/themes/Hotel/assets/video/hero_1.mp4" class="fillWidth fadeIn animated" style="width: 1366px; margin-top: 0px; margin-left: -645px; height: 1029px;" data-dm-button-id="download-master-button-7940257"></video>
+         </div>
+</section> -->
 
-
-
-	<section id="about" class="about sec-top sec-bot">
+<!-- 2 Секция - Общая информация отеля -->
+	<section id="about" class="about sec-top sec-bot" style="background-image: url(images/cont/2sec_bg.png)">
 		<div class="container">
 			<div class="row no-gutters text-center">
 				<div class="col-lg-10 offset-lg-1 section-header">
@@ -76,7 +113,6 @@
                     <div class="devider3">
                         <p></p>
                     </div>
-
 					<h4>We invite you to spend your vacation with us.</h4>
 				</div>
 			</div>
@@ -95,7 +131,35 @@
                         </div>
                     </div>
                     <div class="col-lg-6 about_img">
-                        <img src="images/test/bolgar2.jpg" alt="">
+
+                        <div id="carousel_aboutBulgar" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/cont/2sec_slide1-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide1-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide1-3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide1-4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide1-5.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_aboutBulgar" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_aboutBulgar" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="row mb-4">
@@ -109,7 +173,37 @@
                         </div>
                     </div>
                     <div class="col-lg-6 about_img">
-                        <img src="images/test/sozopol2.jpg" alt="">
+                        <div id="carousel_aboutSosopol" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/cont/2sec_slide2-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide2-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide2-3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide2-4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide2-5.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide2-6.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_aboutSosopol" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_aboutSosopol" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="row mb-4">
@@ -124,19 +218,51 @@
                         </div>
                     </div>
                     <div class="col-lg-6 about_img">
-                        <img src="images/test/mor_vil_2.jpg" alt="">
+                        <div id="carousel_aboutVila" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/cont/2sec_slide3-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide3-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide3-3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide3-4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide3-5.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide3-6.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cont/2sec_slide3-7.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_aboutVila" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_aboutVila" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 		</div>
 	</section>
 
-
-
-
-    <!-- 3 Секция - Индикаторы с паралакс фоном -->
-	<section id="indicators" class="indicators sec-top sec-bot">
-		<div class="container">
+<!-- 3 Секция - Индикаторы с паралакс фоном -->
+	<section id="indicators" class="indicators sec-top sec-bot" style="background-image: url(images/cont/3sec_bg.jpg)">
+        <div class="see_star">
+            <img src="images/cont/3sec_star-3.png" alt="">
+        </div>
+        <div class="container">
 			<div class="row no-gutters text-center">
 				<div class="col-lg-8 offset-lg-2 section-header">
 					<h3>Indicators</h3>
@@ -148,28 +274,28 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-md-3 indicator-item">
+				<div class="col-lg-3 indicator-item">
 					<div class="indicator-item-img">
 						<span><i class="fas fa-temperature-low"></i></span>
 					</div>
 					<p class="indicator-title">Air temperature.</p>
 					<p>Average air temperature in the summer of 28 degrees</p>
 				</div>
-				<div class="col-md-3 indicator-item">
+				<div class="col-lg-3 indicator-item">
 					<div class="indicator-item-img">
 						<span><i class="fas fa-umbrella-beach"></i></span>
 					</div>
 					<p class="indicator-title">400 meters to the beach </p>
 					<p>The distance to the city beach is only 400 meters.</p>
 				</div>
-				<div class="col-md-3 indicator-item">
+				<div class="col-lg-3 indicator-item">
 					<div class="indicator-item-img">
 						<span><i class="fas fa-temperature-low"></i></span>
 					</div>
 					<p class="indicator-title">Water temperature</p>
 					<p>The average sea temperature in the summer of 25 degrees.</p>
 				</div>
-				<div class="col-md-3 indicator-item">
+				<div class="col-lg-3 indicator-item">
 					<div class="indicator-item-img">
 						<span><i class="fas fa-users"></i></span>
 					</div>
@@ -178,11 +304,11 @@
 				</div>
 			</div>
 		</div>
+	</section><!-- /3sec - indicators -->
 
-	</section><!--indicators-->
-
-    <!-- 4 Секция - Достопримечательности -->
+<!-- 4 Секция - Достопримечательности -->
     <section id="attractions" class="attractions sec-top">
+        <div class="attr-bg"></div>
         <div class="container-fluid">
             <div class="row no-gutters">
                 <div class="col-lg-10 offset-lg-1 section-header text-center">
@@ -198,7 +324,7 @@
                 <div class="col-lg-4">
                     <div class="attractions-block attractions-block-small">
                         <a href="#">
-                            <img src="img/test/burgas-airport.jpg" alt="">
+                            <img src="images/cont/4sec-burgas-airport.jpg" alt="">
                             <p class="attractions-item-text">Transfer</p>
                         </a>
                     </div>
@@ -207,7 +333,7 @@
                 <div class="col-lg-8">
                     <div class="attractions-block attractions-block-small">
                         <a href="#">
-                            <img src="img/test/neptun.jpg" alt="">
+                            <img src="images/cont/4sec-neptun.jpg" alt="">
                             <p class="attractions-item-text">Aquapark Neptun</p>
                         </a>
                     </div>
@@ -219,7 +345,7 @@
                         <div class="col-lg-12">
                             <div class="attractions-block attractions-block-small">
                                 <a href="#">
-                                    <img src="img/test/old_city2.jpg" alt="">
+                                    <img src="images/cont/4sec-old_city2.jpg" alt="">
                                     <p class="attractions-item-text">Old city</p>
                                 </a>
                             </div>
@@ -228,7 +354,7 @@
                         <div class="col-lg-12">
                             <div class="attractions-block attractions-block-small">
                                 <a href="#">
-                                    <img src="img/test/ropotamo.jpg" alt="">
+                                    <img src="images/cont/4sec-ropotamo.jpg" alt="">
                                     <p class="attractions-item-text">Nature reserve Ropotamo</p>
                                 </a>
                             </div>
@@ -240,19 +366,18 @@
                 <div class="col-lg-4 ">
                     <div class="attractions-block attractions-block-big">
                         <a href="#">
-                            <img class="attractions-img" src="img/test/castle4.jpg" alt="">
+                            <img class="attractions-img" src="images/cont/4sec-castle4.jpg" alt="">
                             <p class="attractions-item-text">The Castle of Ravadinovo</p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!--attractions-->
+    </section><!-- /4sec - attractions -->
 
-
-
-    <!-- 5 Секция - Номера -->
+<!-- 5 Секция - Номера -->
 	<section id="rooms" class="rooms section-tabs sec-top sec-bot">
+        <div class="rooms-bg"></div>
 		<div class="container">
 			<div class="row no-gutters text-center">
 				<div class="col-lg-8 offset-lg-2 section-header">
@@ -282,47 +407,47 @@
 					<div class="tab-content" id="myTabContent">
 						<div class="tab-pane fade show active" id="webdesign2" role="tabpanel" aria-labelledby="webdesign-tab2">
 							<div class="gallery text-center row">
-								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/1.jpg">
-										<img src="img/gallery/1_s.jpg" alt="">
+								<div class="col-lg-4 col-md-6 gallery-item">
+									<a href="images/gallery/1.jpg">
+										<img src="images/gallery/1_s.jpg" alt="">
 									</a>
 								</div>
-								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/2.jpg">
-										<img src="img/gallery/2_s.jpg" alt="">
+								<div class="col-lg-4 col-md-6 gallery-item">
+									<a href="images/gallery/2.jpg">
+										<img src="images/gallery/2_s.jpg" alt="">
 									</a>
 								</div>
-								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/3.jpg">
-										<img src="img/gallery/3_s.jpg" alt="">
+								<div class="col-lg-4 col-md-6 gallery-item">
+									<a href="images/gallery/3.jpg">
+										<img src="images/gallery/3_s.jpg" alt="">
 									</a>
 								</div>
-								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/4.jpg">
-										<img src="img/gallery/4_s.jpg" alt="">
+								<div class="col-lg-4 col-md-6 gallery-item">
+									<a href="images/gallery/4.jpg">
+										<img src="images/gallery/4_s.jpg" alt="">
 									</a>
 								</div>
-								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/5.jpg">
-										<img src="img/gallery/5_s.jpg" alt="">
+								<div class="col-lg-4 col-md-6 gallery-item">
+									<a href="images/gallery/5.jpg">
+										<img src="images/gallery/5_s.jpg" alt="">
 									</a>
 								</div>
-								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/6.jpg">
-										<img src="img/gallery/6_s.jpg" alt="">
+								<div class="col-lg-4 col-md-6 gallery-item">
+									<a href="images/gallery/6.jpg">
+										<img src="images/gallery/6_s.jpg" alt="">
 									</a>
 								</div>
-								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/7.jpg">
-										<img src="img/gallery/7_s.jpg" alt="">
+								<div class="col-lg-4 col-md-6 gallery-item">
+									<a href="images/gallery/7.jpg">
+										<img src="images/gallery/7_s.jpg" alt="">
 									</a>
 								</div>
-								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/8.jpg">
-										<img src="img/gallery/8_s.jpg" alt="">
+								<div class="col-lg-4 col-md-6 gallery-item">
+									<a href="images/gallery/8.jpg">
+										<img src="images/gallery/8_s.jpg" alt="">
 									</a>
 								</div>
-								<div class="col-sm-4 gallery-item">
+								<div class="col-lg-4 col-md-6 gallery-item">
 									<a href="img/gallery/9.jpg">
 										<img src="img/gallery/9_s.jpg" alt="">
 									</a>
@@ -330,25 +455,25 @@
 							</div>
 
                             <div class="room_price text-center">
-                                <div class="room_description">
-                                    <p>Rates are per night per accommodation type. Includes tourist taxes, VAT, parking lot and insurance..</p>
+                                
+                                <div class="room_price text-center">
+                                    <h4>Rates are per night per accommodation type. Includes tourist taxes, VAT, parking lot and insurance..</h4>
+                                    <div class="row">
+                                        <div class="col-lg-6 price_wrap">
+                                            <p>01 Jun. - 24 Jun.: <span>&#32; 58 лв. </span> </p>
+                                        </div>
+                                        <div class="col-lg-6 price_wrap">
+                                            <p>25 Jun. - 08 Jul.: <span>&#32; 80 лв. </span> </p>
+                                        </div>
+                                        <div class="col-lg-6 price_wrap">
+                                            <p>09 Jul. - 24 Aug.: <span>&#32; 99 лв. </span> </p>
+                                        </div>
+                                        <div class="col-lg-6 price_wrap">
+                                            <p>25 Aug. - 10 Sep.: <span>&#32; 80 лв. </span> </p>
+                                        </div>
+                                    </div>
+                                </div><!--/.room_price -->
 
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6  price_wrap">
-                                        <p>01 Jun. - 24 Jun.: <br><span>&#32; 58 лв. </span> </p>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 price_wrap">
-                                        <p>25 Jun. - 08 Jul.: <br><span>&#32; 80 лв. </span> </p>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 price_wrap">
-                                        <p>09 Jul. - 24 Aug.: <br><span>&#32; 99 лв. </span> </p>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 price_wrap">
-                                        <p>25 Aug. - 10 Sep.: <br><span>&#32; 80 лв. </span> </p>
-                                    </div>
-                                </div>
                                 <div class="row">
                                     <div class="col-12 text-center mt-4">
                                         <p>Stay over 5 nights gets 5 лв. discount!</p>
@@ -360,33 +485,32 @@
 						<div class="tab-pane fade" id="mobileapp2" role="tabpanel" aria-labelledby="mobileapp-tab2">
 							<div class="gallery text-center row">
 								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/4.jpg">
-										<img src="img/gallery/4_s.jpg" alt="">
+									<a href="images/gallery/4.jpg">
+										<img src="images/gallery/4_s.jpg" alt="">
 									</a>
 								</div>
 								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/5.jpg">
-										<img src="img/gallery/5_s.jpg" alt="">
+									<a href="images/gallery/5.jpg">
+										<img src="images/gallery/5_s.jpg" alt="">
+									</a>
+								</div>
+								<div class="col-sm-4 gallery-item">images							<a href="images/gallery/6.jpg">
+										<img src="images/gallery/6_s.jpg" alt="">
 									</a>
 								</div>
 								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/6.jpg">
-										<img src="img/gallery/6_s.jpg" alt="">
+									<a href="images/gallery/1.jpg">
+										<img src="images/gallery/1_s.jpg" alt="">
 									</a>
 								</div>
 								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/1.jpg">
-										<img src="img/gallery/1_s.jpg" alt="">
+									<a href="images/gallery/2.jpg">
+										<img src="images/gallery/2_s.jpg" alt="">
 									</a>
 								</div>
 								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/2.jpg">
-										<img src="img/gallery/2_s.jpg" alt="">
-									</a>
-								</div>
-								<div class="col-sm-4 gallery-item">
-									<a href="img/gallery/3.jpg">
-										<img src="img/gallery/3_s.jpg" alt="">
+									<a href="images/gallery/3.jpg">
+										<img src="images/gallery/3_s.jpg" alt="">
 									</a>
 								</div>
 								<div class="col-sm-4 gallery-item">
@@ -404,7 +528,7 @@
 										<img src="img/gallery/9_s.jpg" alt="">
 									</a>
 								</div>
-							</div><!-- /.gallery -->
+							</div> <!--/.gallery -->
 
                             <div class="room_price text-center">
                                 <h4>Стоимость номера за сутки.</h4>
@@ -422,7 +546,7 @@
                                         <p>25 Августа - 10 Сентября: <span>&#32; 80 лв. </span> </p>
                                     </div>
                                 </div>
-                            </div><!--/.room_price-->
+                            </div><!--/.room_price -->
 
 						</div>
 						<div class="tab-pane fade" id="branding2" role="tabpanel" aria-labelledby="branding-tab2">
@@ -472,7 +596,7 @@
 										<img src="img/gallery/6_s.jpg" alt="">
 									</a>
 								</div>
-							</div><!-- /.gallery -->
+							</div>/.gallery -->
 
                             <div class="room_price text-center">
                                 <h4>Стоимость номера за сутки.</h4>
@@ -490,7 +614,7 @@
                                         <p>25 Августа - 10 Сентября: <span>&#32; 80 лв. </span> </p>
                                     </div>
                                 </div>
-                            </div><!--/.room_price-->
+                            </div><!-- /.room_price -->
 
 						</div>
 						<div class="tab-pane fade" id="branding3" role="tabpanel" aria-labelledby="branding-tab3">
@@ -557,18 +681,18 @@
 										<p>25 Августа - 10 Сентября: <span>&#32; 80 лв. </span> </p>
 									</div>
 								</div>
-							</div><!--/.room_price-->
-
+							</div><!-- /.room_price -->
+ 
 						</div>
 					</div>
 				</div>
 				<!-- /.col-md-12 -->
-			</div>
+			 </div>
 		</div>
-	</section>
-	<!-- /.section-rooms -->
+	</section> <!-- /5sec - rooms -->
+	
 
-    <!-- 6 Секция - Карта -->
+<!-- 6 Секция - Карта -->
 	<section id="section-map" class="section-map">
 		<div class="container-fluid">
 			<div class="row no-gutters">
@@ -579,14 +703,17 @@
                 </div>
 			</div>
 		</div>
+    </section> 
+    <!-- /6sec - map -->
 
-	</section>
 
-
-    <!-- 7 Секция - Контакты -->
+<!-- 7 Секция - Контакты -->
     <section id="contact" class="form sec-top sec-bot">
         <div class="container">
 
+            <div class="contact_flag">
+                <img src="images/cont/7sec_flag.png" alt="">
+            </div>
             <div class="row no-gutters text-center">
                 <div class="col-lg-8 offset-lg-2 section-header">
                     <h3>Contact Us</h3>
@@ -597,24 +724,22 @@
                 </div>
             </div>
 
-
-
             <div class="row form_block">
-                <div class="col-md-6 form-address">
+                <div class="col-lg-6 form-address">
                     <div class="form-address-info">
                         <p>OUR ADDRESS</p>
-                        <p>House #5, Anteya strit,<br> Sozopol Bulgaria</p>
+                        <p><a href="https://www.google.com/maps/place/%D0%A1%D0%B5%D0%BC%D0%B5%D0%B5%D0%BD+%D1%85%D0%BE%D1%82%D0%B5%D0%BB+%D0%9C%D0%9E%D0%A0%D0%A1%D0%9A%D0%90+%D0%92%D0%98%D0%9B%D0%90/@42.4055062,27.7074209,271m/data=!3m1!1e3!4m8!3m7!1s0x0:0xb5d0304ea0c6c81e!5m2!4m1!1i2!8m2!3d42.406326!4d27.707363?hl=ru-RU"><span><i class="fas fa-map-marker-alt"></i></span> House 5, Anteya street,<br> Sozopol Bulgaria</a></p>
                     </div>
                     <div class="form-address-info">
                         <p>CALL US</p>
-                        <p>088 880 1997</p>
+                        <p><a href="tel:0888801997"><span><i class="fas fa-phone-alt"></i></span>088 880 1997</a></p>
                     </div>
                     <div class="form-address-info">
                         <p>EMAIL US</p>
-                        <p><a href="mailto:morska_vila@abv.bg">morska_vila@abv.bg</a></p>
+                        <p><span><i class="fas fa-envelope"></i></span> <a href="mailto:morska_vila@abv.bg">morska_vila@abv.bg</a></p>
                     </div>
                 </div>
-                <div class="col-md-6 form-inputs">
+                <div class="col-lg-6 form-inputs">
                     <div class="keep_form">
 
                         <form class="" action="">
@@ -632,7 +757,7 @@
                                     <input id="formDate" type="date" class="form-control" name="formDate" placeholder="Arrival date" required>
                                 </div>
                                 <div class="col-md-4 col-12">
-                                    <label for="formDays">Days</label>
+                                    <label for="formDays">Nights</label>
                                     <select class="form-control" id="formDays" required>
                                         <option>0</option>
                                         <option>1</option>
@@ -678,29 +803,26 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="formMessage">Messagea</label>
+                                    <label for="formMessage">Message</label>
                                     <textarea class="form-control" id="formMessage" rows="3" placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-md-8 col-12">
 
                                 </div>
                                 <div class="col-md-4 col-12">
-                                    <button type="submit" class="btn btn-violet rounded-pill contactBtn">Submit</button>
+                                    <input type="submit" class="btn btn-violet rounded-pill contactBtn" value="BOOK NOW">
                                 </div>
-
-
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
-        </div>
-    </section><!--/form-->
+        </div> 
+    </section>  <!-- 7sec - contacts-->
 
 
-    <!-- 8 Секция - Призыв к бронированию с паралакс фоном -->
-    <section class="section-letsDo text-center sec-top sec-bot">
+<!-- 8 Секция - Призыв к бронированию с паралакс фоном -->
+    <section class="section-letsDo text-center sec-top sec-bot" style="background-image: url(images/cont/8sec_bg.jpg)">
         <div class="container">
             <div class="row no-gutters text-center">
                 <div class="col-lg-8 offset-lg-2 section-header">
@@ -724,7 +846,7 @@
 
             <!-- Modal -->
             <div class="modal fade" id="footerModalForm" tabindex="-1" role="dialog" aria-labelledby="footerModalForm" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-dialog modal-dialog-centered " role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="footerModalFormTitle">Form request</h5>
@@ -799,48 +921,27 @@
                                             <label for="footerFormMessage">Message</label>
                                             <textarea class="form-control" id="footerFormMessage" rows="3" placeholder="Message"></textarea>
                                         </div>
-                                        <div class="col-md-8 col-12">
-
+                                        <div class="col-md-8"></div>
+                                        <div class="col-md-4">
+                                            <input type="submit" class="btn btn-violet rounded-pill contactBtn" value="Submit">
                                         </div>
-                                        <div class="col-md-4 col-12">
-                                            <button type="submit" class="btn btn-violet rounded-pill contactBtn">Submit</button>
-                                        </div>
-
-
                                     </div>
                                 </form>
-
                             </div>
-
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
-    </section>
-    <!-- /. 8 section-letsDo -->
-
+    </section> <!-- /8sec - section-letsDo -->
 
     <footer>
         <div class="container-fluid">
             <div class="row no-gutters text-center">
-                <div class="col-md-3 col-12 footer-item">
+                <div class="col-lg-4 footer-item">
                     <a href="#"><p class="logo">MORSKA VILA</p></a>
-
-
-
-
-
-
                 </div>
-                <div class="col-md-6 col-12 footer-item">
+                <div class="col-lg-4 footer-item">
                     <p>For booking, you must make a deposit to the account:<br>
                         First Investment Bank www.fibank.bg<br>
                         account holder: "GoBi-Di" Ltd.<br>
@@ -889,10 +990,6 @@
                                         security
                                         What security procedures do we use to protect your personal information?
                                         We use reasonable working systems and procedures to protect the personal data you provide to us. We also use security procedures and technical and physical restrictions on the access and use of personal information on our media. Only authorized personnel have access to personal information in the course of their work.</p>
-
-
-
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -900,13 +997,8 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
-                <div class="col-md-3 col-12 footer-item">
+                <div class="col-lg-4 footer-item">
                     <a href="https://clck.yandex.ru/redir/dtype=stred/pid=7/cid=1228/*https://yandex.ru/pogoda/116314"
                        target="_blank">
                         <img src="https://info.weather.yandex.net/116314/2_white.ru.png?domain=ru" border="0" alt="Яндекс.Погода"/>
@@ -917,17 +1009,5 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-	<!-- <script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/baguetteBox.js"></script>
-	<script src="js/all.js"></script>
-	<script src="js/my_script.js"></script> -->
 </body>
 </html>

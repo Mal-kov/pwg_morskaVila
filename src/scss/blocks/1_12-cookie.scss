@@ -1,0 +1,49 @@
+.cookie{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 115px;
+    width: 100%;
+    background-color: $shadow;
+    z-index: 200;
+    padding-top: 10px;
+
+    .cookie_block{
+
+        width: 700px;
+
+        
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+        margin: 0 auto;
+        padding: 20px 50px 0;
+        border: 1px solid $yellow;
+
+
+
+        .cookie_text{
+
+            p{
+                font-size: 16px;
+                line-height: 20px;
+
+
+
+            }
+            
+
+        }
+
+        .cookie_button{
+
+            button{
+                @include btn();
+            }
+            
+        }
+
+    }
+
+
+}

@@ -8,6 +8,7 @@
 }
 
 @mixin min-max($min-width, $max-width, $padding) {
+  @content;
   min-width: $min-width;
   max-width: $max-width;
   padding: 0 $padding;
@@ -19,24 +20,24 @@
   text-decoration: none;
   padding: 12px 32px;
   border-radius: 4px;
-  border: 1px solid $darkText;
+  border: 1px solid $yellow;
   cursor: pointer;
   color: $white;
-  background-color: $darkText;
+  background-color: $purple;
   transition-property: background-color;
   transition-duration: 500ms;
   @content;
 
   &:hover{
-    color: $darkText;
-    background-color: $white;
+    color: $white;
+    background-color: $yellow
   }
   
 }
 
 @mixin btn_download() {
   text-decoration: none;
-  padding: 12px 12px 12px 50px;
+  padding: 12px 12px 12px 12px;
   border: 1px solid transparent;
   border-radius: 4px;
   color: $darkText;

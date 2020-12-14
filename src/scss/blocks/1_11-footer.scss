@@ -2,13 +2,13 @@
 /* ============================= footer ============================== */
 
 footer{
-    background-color: #69328e;
+    background-color:$purple;
     padding: 30px 0;
 }
 
 footer .footer-item,
 footer .footer-item a{
-    color: #fff;
+    color: $white;
 }
 .footer .footer-item{
     position: relative;
@@ -27,10 +27,8 @@ footer .footer-item a p{
 
 footer .btn{
     height: 40px;
-
-    /*margin-right: 20px;*/
     margin-top: 10px;
-
+    border: 1px solid $yellow;
 }
 
 /* =============================privacy policy ============================== */
@@ -47,4 +45,11 @@ footer .btn{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-device-width: 768px) {
+    footer{
+        background-color:$purple;
+        padding: 50px 0;
+    }
 }

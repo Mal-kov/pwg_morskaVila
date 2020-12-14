@@ -4,17 +4,19 @@
 @charset "UTF-8";
 
 
-// @import "~font-awesome/scss/font-awesome.scss";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import 'baguettebox.js/dist/baguetteBox.min.css';
 @import "./scss/reset.scss";
 @import "./scss/variables.scss";
 @import "./scss/fonts.scss";
-@import "./scss/mixins.scss";
-@import "./scss/cor.scss";
-
+@import "./scss/blocks/animations.scss";
 @import "./css/animate.css";
 @import "./css/baguetteBox.css";
 @import "./css/mos-preloader.css";
 @import "~bootstrap/scss/bootstrap";
+@import "./scss/mixins.scss";
+@import "./scss/cor.scss";
+
 @import "./scss/blocks/1_0-menu.scss";
 @import "./scss/blocks/1_1-header.scss";
 @import "./scss/blocks/1_3-video.scss";
@@ -26,5 +28,7 @@
 @import "./scss/blocks/1_9-contact.scss";
 @import "./scss/blocks/1_10-lets.scss";
 @import "./scss/blocks/1_11-footer.scss";
+@import "./scss/blocks/1_12-cookie.scss";
 @import "./scss/blocks/2_0-blog.scss";
 @import "./scss/blocks/3_0-single.scss";
+

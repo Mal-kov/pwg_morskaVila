@@ -4,21 +4,22 @@
 }
 
 .main-header{
-    /*background: url(../img/test/header.jpg) center no-repeat;*/
-    /*background-size: cover;*/
+    background-size: cover;
     height: 100vh;
     min-height: 700px;
     position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0, .4);
+    }
 }
-.main-header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0, .4);
-}
+
 
 .main-header .navbar-toggler,
 .header-all .navbar-toggler{
@@ -118,14 +119,12 @@
     color: #fff;
 }
 
-
-
 .main-header-text{
     position: absolute;
     top: 25%;
     left: 5%;
     max-width: 872px;
-    color: #fff;
+    color: $white;
     padding: 20px;
     z-index: 4;
 }
@@ -135,7 +134,7 @@
 .btn{
     font-size: 15px;
     font-weight: 600;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
     border-radius: 5px;
 }
@@ -151,9 +150,9 @@ footer .btn{
     opacity: .8;
     box-shadow: 0 4px 16px rgba(0,0,0,.35);
     transition: all .5s;
-    border: 1px solid #69328e;
-    background-color: #69328e;
-    color: #fff;
+    border: 1px solid $yellow;
+    background-color: $purple;
+    color: $white;
 
 }
 .btn-header{
@@ -165,27 +164,61 @@ footer .btn{
 .form .btn:hover,
 .section-letsDo .btn:hover,
 footer .btn:hover{
-    color: #69328e;
+    color: $purple;
     opacity: 1;
 }
-/*.btn-pink{*/
-    /*background-color: #f42267;*/
-/*}*/
-/*.btn-violet{*/
-    /*background-color: #69328e;*/
-/*}*/
-
-
 .contactBtn:hover{
-    border-color: #69328e;
-    background-color: #feb326;
-    /*color: #69328e;*/
+    border-color: $purple;
+    background-color: $yellow;
 }
 
 .form .btn{
     height: 40px;
-
-    /*margin-right: 20px;*/
     margin-top: 10px;
-
 }
+
+// Вертикальная карусель
+#carousel_headerText{
+    height: 100px;
+}
+.vertical .carousel-inner {
+    height: 100%;
+  }
+  
+  .carousel.vertical .item {
+     -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+     -ms-transition: 0.6s ease-in-out top;
+     -o-transition: 0.6s ease-in-out top;
+     transition: 0.6s ease-in-out top;
+  }
+  
+  .carousel.vertical .active {
+     top: 0;
+  }
+  
+  .carousel.vertical .next {
+     top: 400px;
+  }
+  
+  .carousel.vertical .prev {
+     top: -400px;
+  }
+  
+  .carousel.vertical .next.left,
+  .carousel.vertical .prev.right {
+     top: 0;
+  }
+  
+  .carousel.vertical .active.left {
+     top: -400px;
+  }
+  
+  .carousel.vertical .active.right {
+     top: 400px;
+  }
+  
+  .carousel.vertical .item {
+     left: 0;
+  }
+

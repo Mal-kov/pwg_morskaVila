@@ -1,27 +1,14 @@
-
-// * {
-//     border: 1px solid #f00 !important;
-//     }
 body{
-    // font-family: 'Inter', sans-serif;
     overflow-wrap: break-word;
     word-wrap: break-word;
     background-color: $mainBg;
     height: 100%;
+    position: relative;
 }
 
-.container{
-    @include min-max(320px, 100%, 0);
-}
-
-.wrap{
-    @include min-max(320px, 1140px, 15px);
-}
-
-
-/** {*/
-    /*border: 1px solid #f00 !important;*/
-/*}*/
+// *{
+//     border: 1px solid #f00 !important;
+// }
 
 section{
 	padding: 0;
@@ -37,13 +24,10 @@ section{
 	margin-bottom: 50px;
 }
 
-
-
-
 .container-fluid{
 	padding: 0;
 }
-
+// Кнопка скролла для перемещения наверх
 .scrollToTop{
     position: fixed;
     bottom: 60px;
@@ -55,85 +39,80 @@ section{
     height: 50px;
     width: 50px;
     z-index: 1001;
-    color: #fff;
+    color: $white;
     transition: all .5s;
-    background-color: #5f2d9d;
-    border: 0;
+    background-color: $purple;
+    border: 1px solid $yellow;
     cursor: pointer;
-}
-.scrollToTop:hover{
-    /*background-color: #fff;*/
-    background-color: #feb326;
-    text-decoration: none;
-    outline: none;
-    color: #5f2d9d;
-    border: 1px solid #5f2d9d;
-}
-.scrollToTop svg{
-    position: relative;
-    display: block;
-    min-width: 100%;
-    height: 100%;
-}
-.scrollToTop svg path{
-    position: absolute;
-    top: 50%;
-    left: 50%;
 
+    &:hover{
+        background-color: $yellow;
+        text-decoration: none;
+        outline: none;
+        color: $purple;
+        border: 2px solid $yellow;
+
+    }
+    svg{
+        position: relative;
+        display: block;
+        min-width: 100%;
+        height: 100%;
+
+        path{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
 }
+
+// Основные параметры типографии
 h1{
-    /*font-family: 'Gabriela', serif;*/
-    // font-family: 'Caveat Brush', cursive;
+    font-family: 'Caveat Brush', cursive;
     font-size: 60px;
 }
 h2{
-    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     margin-top: 20px;
 }
-
-
 h3{
+    font-family: 'Caveat Brush', cursive;
     // font-family: 'Gabriela', serif;
     font-size: 50px;
-    /*margin-bottom: 20px;*/
-
 }
 h4{
     // font-family: 'Montserrat', sans-serif;
+    font-family: 'Gabriela', serif;
     font-size: 30px;
     margin-top: 20px;
 }
-
 p{
-    // font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     line-height: 30px;
     font-weight: 300;
-
 }
 p.text16{
     font-size: 16px;
     line-height: 22px;
 }
-
-
 p.kursiv{
     font-style: italic;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100;
 }
 p.single-address{
-    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     line-height: 36px;
 }
 p.logo{
-    // font-family: 'Caveat Brush', cursive;
+    font-family: 'Caveat Brush', cursive;
     font-size: 40px;
     text-transform: uppercase;
 }
-
 .divider2,
 .divider3{
     display: block;
@@ -143,7 +122,6 @@ p.logo{
 .divider3 p{
     text-align: center;
 }
-
 .devider2 p::after,
 .devider3 p::after,
 .devider2::before,
@@ -153,23 +131,17 @@ p.logo{
     content: "";
     width: 8px;
     height: 8px;
-    background-color: #5f2d9d;
+    background-color: $purple;
     display: block;
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    /*transform: translateY(2px);*/
 }
 .devider2 p::after,
 .devider2::before,
 .devider2::after{
-
     top: 38%;
-
 }
-
-
-
 .devider2::before,
 .devider3::before{
     left: 46%;
@@ -182,18 +154,16 @@ p.logo{
 .devider3::after{
     right: 45%;
 }
-
 .post, .page{
     margin: 0;
 }
 
-
-/* ============================= 404 ============================== */
+//* ============================= 404 ============================== */
 .section-404{
     height: 800px;
 }
 
-/* =============================.pagination============================== */
+//* =============================.pagination============================== */
 .page-link{
     color: #69328e;
     transition: all .5s;
@@ -210,16 +180,275 @@ p.logo{
     border-color: #69328e;
 }
 
+//* ============================= Форма обратной связи============================== */
+.keep_form{
+    flex-basis: 100%;
+    label{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+        color: $purple;
+    }
+    input,
+    select{
+        border: none;
+        border-bottom: 1px solid $gray;
+        border-radius: 0;
+    }
+    .col-4,
+    .col-8,
+    .col-12{
+        margin-bottom: 7px;
+    }
+}
+
+
+@media screen and (max-device-width: 992px) {
+
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .main-header-text{
+        background-color: rgba(0,0,0,.3);
+    }
+
+    .navbar-nav{
+        background: linear-gradient(45deg, $purple 0%,$yellow 100%);
+        position: relative;
+        z-index: 1;
+        padding: 15px 15px;
+
+        .nav-link{
+            font-size: 20px;
+        }
+    }
+    .social .social-item{
+        border-right: none;
+    }
+
+    .form-inputs{
+
+        padding: 10px 30px;
+    }
+
+    footer .footer-item{
+        margin-bottom: 30px;
+
+    }
+    footer .footer-weather{
+        margin-top: 30px;
+    }
+
+    .copyright{
+        padding: 25px 0;
+    }
+    .section-reviews h3,
+    .section-reviews h4{
+        font-size: 25px;
+    }
+    .section-reviews .blockquote{
+        font-size: 17px;
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+    .section-reviews .blockquote::before{
+        font-size: 100px;
+        top: -40px;
+    }
+
+
+
+    /* 1 sec. - set*/
+    .devider3 p::after,
+    .devider3::before,
+    .devider3::after{
+        top: 45%;
+    }
+
+
+    /* 2 sec. - About*/
+
+    .see_star{
+        width: 200px;
+    }
 
 
 
 
+}
+@media screen and (max-device-width: 768px) {
+    h1{
+        text-align: center;
+    }
+    .video-header{
+        display: none;
+    }
+    .scrollToTop{
+        bottom: 50px;
+        right: 10px;
+    }
+    .main-header-text{
+        left: 0;
+        margin: 0 20px;
+        width: 100%;
+        #carousel_headerText{
+            height: 150px;
+            text-align: center;
+        }
+    }
+    h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 30px;
+        text-align: center;
+    }
+    .section-progress .progress-item{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    /* 1 sec. - set*/
+    .devider3 p::after,
+    .devider3::before,
+    .devider3::after{
+        top: 45%;
+    }
+    .form_block {
+        justify-content: center;
+        margin-top: 0;
+    }
+    .attractions-block a p.attractions-item-text{
+        font-size: 30px;
+    }
+    .main-header-buttons .btn,
+    .form .btn,
+    .section-letsDo .btn,
+    footer .btn{
+        margin-right: 0;
+    }
+}
+@media screen and (max-device-width: 680px) {
+    .main-header{
+        background-position-x: 30%;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 34px;
+    }
+    #carouselExampleControls{
+        height: 80px;
+        margin-bottom: 30px;
+    }
+    .see_star{
+        top: -50px;
+        width: 150px;
+    }
+    .main-header-text{
+        top: 90px;
+    }
+    .main-header-buttons .btn{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .main-header-buttons .btn:last-child{
+        margin-top: 0;
+    }
+    .sec-top{
+        padding-top: 30px;
+    }
+    .sec-bot{
+        padding-bottom: 30px;
+    }
+    .indicators .indicator-item{
+        margin-top: 20px;
+    }
+    .indicators .indicator-item-img{
+        margin-bottom: 10px;
+    }
+    .indicators .indicator-item p.indicator-title{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-device-width: 576px) {
+    .section-content img{
+        display: block;
+        max-width: 100%;
+        margin: 0 2%;
+    }
+    .room_price .price_wrap p{
+        font-size: 16px;
+    }
+    .room_price .price_wrap p span{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 26px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (max-device-width: 480px) {
+
+    .sec-top{
+        padding-top: 10px;
+    }
+    .sec-bot{
+        padding-bottom: 10px;
+    }
 
 
-@media(max-width:560px){
+    .section-tabs .nav-pills .nav-link{
+        padding: 8px 16px;
+    }
+    .section-tabs .nav-pills .nav-item{
+        width: 100%;
+    }
+    .thumb{
+        float: none;
+        width: 100%;
+    }
+
 
     
-    
+
+}
+
+@media screen and (max-device-width: 380px) {
+
+
+    h1{
+
+    }
+    h3{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 24px;
+    }
+
+
+    // .main-header .navbar-brand{
+    //     font-size: 30px;
+    // }
+
+
+
+    /* 1 sec. - set*/
+    .devider3 p::after,
+    .devider3::before,
+    .devider3::after{
+        display: none;
+    }
 
 
 
